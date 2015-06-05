@@ -22,7 +22,7 @@ swapon -s
 grep -i --color swap /proc/meminfo
 
 echo "Adding swap entry to /etc/fstab"
-echo "/swapfile none            swap    sw              0       0" >> /etc/fstab
+echo "\n/swapfile none            swap    sw              0       0" >> /etc/fstab
 
 echo "Result: "
 cat /etc/fstab
